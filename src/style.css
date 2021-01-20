@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #777;
+}
+
+.siemprePresente {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    background-color: #DDD;
+}
+
+.presentacion{
+    width: 95%;
+    margin: auto;
+    background-color: #DDD;
+}
+
+
+img {
+    width: 100px;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.contiene1, .contiene2{
+    display: flex;
+}
+
+.acompañaTextArea{
+    display: inline-block;
+    margin: 0;
+    align-items: flex-start;
+}
+
+.acompañaDesplazamiento{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.selector{
+    height: 35px;
+    vertical-align:bottom;
+}
+
+textarea {
+    width: 40%;
+    height: 6rem;
+}
+
+.botonPresentacion, .botonCifrarCifrar, .botonDescifrarDescifrar, .alInicio {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #000;
+    background-color: #999;
+    border: solid 1px;
+}
+
+
+
+
+
