@@ -3,15 +3,18 @@ body {
     background-color: #777;
 }
 
-.siemprePresente {
+.siemprePresente{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 95%;
     margin: auto;
     background-color: #DDD;
+    margin: 80px auto;
+    padding-top: 0.1px;
 }
 
-.presentacion{
+.primera, .segunda, .tercera, .cuarta, .quinta{
     width: 95%;
     margin: auto;
     background-color: #DDD;
@@ -19,46 +22,81 @@ body {
 
 
 img {
-    width: 100px;
+    width: 80px;
 }
 
 h1 {
     display: inline-block;
+    align-items: center;
+    margin: 0 50px;
+    font-size: 4em;
 }
 
-.contiene1, .contiene2{
+.contiene1, .contiene2, .contenedorBotones, .desplazamiento, .area {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.acompañaTextArea{
-    display: inline-block;
-    margin: 0;
-    align-items: flex-start;
-}
-
-.acompañaDesplazamiento{
+.acompañaDesplazamiento, .acompañaTextArea{
     display: inline-block;
     margin-right: 4px;
 }
 
 .selector{
-    height: 35px;
-    vertical-align:bottom;
+    height: 26px;
+    vertical-align: bottom;
+    margin-left: 6px;
 }
 
 textarea {
     width: 40%;
-    height: 6rem;
+    min-height: 50px;
 }
 
-.botonPresentacion, .botonCifrarCifrar, .botonDescifrarDescifrar, .alInicio {
+.botonCifrarCifrar, .botonDescifrarDescifrar, .alInicio {
     text-decoration: none;
     padding: 5px 15px;
     color: #000;
     background-color: #999;
     border: solid 1px;
+    width: 115px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
+.alInicio{
+    width: 15%;
+}
+
+.botonPresentacion {
+    text-decoration: none;
+    padding: 5px 15px;
+    width: 115px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #999;
+    border: 1px solid #000;
+}
+
+.area{
+    margin-top: 80px;
+}
+
+.contenedorBotones {
+    margin-top: 80px;
+}
+
+.contenedorBotones a{
+    margin: 5px;
+}
+
+
+p {
+    text-align: center;
+    font-size: 1em;
+}
 
 
 

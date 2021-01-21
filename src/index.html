@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -17,93 +18,120 @@
       </div>
 
       <!-- presentacion -->
-      <div class="presentacion">
-        <div class="contenedorExplicacion">
-          <p>Este es un proyecto que busca posibilitar el intercambio de información que sólo debe ser leída por algunos.</p>
-          <p>Aquí podrás cifrar un mensaje para enviárselo a alguien o descifrar el que te fue enviado.</p>
-          <p>Este es momento de elegir que queres hacer.</p>
+      <div class="primera">
+        <div class="presentacion">
+          <div class="contenedorExplicacion">
+            <p>Este es un proyecto que busca posibilitar el intercambio de información que sólo debe ser leída por algunos.</p>
+            <p>Aquí podrás cifrar un mensaje para enviárselo a alguien o descifrar el que te fue enviado.</p>
+            <p>Este es momento de elegir que queres hacer.</p>
+          </div>
         </div>
-        
-        <div class="botones">
-          <a href="#" class="botonCifrar botonPresentacion">Cifrar</a>
-          <a href="#" class="botonDescifrar botonPresentacion">Descifrar</a>
+
+        <div class="contenedorBotones">
+            <a href="#" class="botonCifrar botonPresentacion">Cifrar</a>
+            <a href="#" class="botonDescifrar botonPresentacion">Descifrar</a>
         </div>
       </div>
 
       <!-- sección cifrar -->
-      <div class="cifrar">
-        <p>Ingresa debajo tu mensaje de hasta 200 caracteres y el desplazamiento, este último debe ser conocido por el receptor para que descifre tu mensaje.</p>
-        <form action="../../form-result.php" method="post" target="_blank">
+      <div class="segunda">
+        <div class="cifrar">
+          <div class="contieneTexto"></div>
+            <p>Ingresa debajo tu mensaje de hasta 200 caracteres.</p>
+            <p>No olvides que el receptor debe conocer el desplazamiento para descifrar tu mensaje.</p>
+          </div>
+          <form action="../../form-result.php" method="post" target="_blank">
 
-          <div class="contiene1">
-            <p class="acompañaTextArea">Ingresá tu mensaje</p>
-            <textarea maxlength="200"></textarea>
-          </div>
-          <div class="desplazamiento">
-            <p class="acompañaDesplazamiento">Elegí el desplazamiento</p>
-            <select class="selector">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <a href="#" class="botonCifrarCifrar">Cifrar</a>
-        
-        </form>
+            <div class="area">
+              <p class="acompañaTextArea">Ingresá tu mensaje</p>
+            </div>
+            <div class="contiene1">
+              <textarea maxlength="200"></textarea>
+            </div>
+            <div class="desplazamiento">
+              <p class="acompañaDesplazamiento">Elegí el desplazamiento</p>
+              <select class="selector">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="contenedorBotones">
+              <a href="#" class="botonCifrarCifrar">Cifrar</a>
+            </div>
+          </form>
+        </div>
       </div>
 
       <!-- sección cifrar2, con mensaje ya cifrado -->
-
-      <div class="cifrar2">
-        <p>Ya lo hiciste, cifraste tu mensaje:</p>
-        <div class="contieneResultado">
-          <p class="resultado"></p>
+        <div class="tercera">
+        <div class="cifrar2">
+          <p>Ya lo hiciste, cifraste tu mensaje:</p>
+          <div class="contieneResultado">
+            <p class="resultado"></p>
+          </div>
+          <div class="contieneTexto">
+            <p>Ahora ya puedes compartir tu mensaje, no olvides indicar el desplazamiento.</p>
+            <p>¿Quieres intentarlo de nuevo?</p>
+          </div>
+          <div class="contenedorBotones">
+            <a href="#" class="alInicio">Volver al inicio</a>
+          </div>  
         </div>
-        <p>Ahora ya puedes compartir tu mensaje, no olvides indicar el desplazamiento.</p>
-        <p>¿Quieres intentarlo de nuevo?</p>
-        <a href="#" class="alInicio">Volver al inicio</a>
       </div>
 
       <!-- sección DEScifrar -->
-      <div class="descifrar">
-        <p>Ingresa debajo el mensaje que deseas descifrar, recuerda tener a mano el desplazamiento, si no lo recuerdas puedes ir probando las posibles opciones.</p>
-        <form action="../../form-result.php" method="post" target="_blank">
-
-          <div class="contiene1">
-            <p class="acompañaTextArea">Ingresá tu mensaje</p>
-            <textarea maxlength="200"></textarea>
+      <div class="cuarta">
+        <div class="descifrar">
+          <div class="contieneTexto"></div>
+            <p>Ingresa debajo el mensaje que deseas descifrar y no olvides tener a mano el desplazamiento.</p>
           </div>
-
-          <div>
-            <p class="desplazamiento">Elegí el desplazamiento</p>
-            <select name="transporte">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          
-          <a href="#" class="botonDescifrarDescifrar">Desifrar</a>
-          
-        </form>
+          <form action="../../form-result.php" method="post" target="_blank">
+            <div class="area">
+              <p class="acompañaTextArea">Ingresá tu mensaje</p>
+            </div>
+            <div class="contiene1">
+              <textarea maxlength="200"></textarea>
+            </div>
+            <div class="desplazamiento">
+              <p class="acompañaDesplazamiento">Elegí el desplazamiento</p>
+              <select class="selector">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="contenedorBotones">
+              <a href="#" class="botonDescifrarDescifrar">Descifrar</a>
+            </div>
+          </form>
+        </div>
       </div>
 
       <!-- sección DEScifrar2, con mensaje ya DEScifrado -->
-
-      <div class="descifrar2">
-        <p>Ya lo hiciste, descifraste tu mensaje:</p>
-        <div class="contieneResultado2">
-          <p class="resultado2"></p>
+      <div class="quinta">
+        <div class="descifrar2">
+          <div class="contieneTexto">
+            <p>Ya lo hiciste, descifraste tu mensaje:</p>
+          </div>
+          <div class="contieneResultado2">
+            <p class="resultado2"></p>
+          </div>
+          <div class="contieneTexto">
+            <p>Ahora que ya conoces tu mensaje, puedes contestarlo volviendo al inicio y cifrando uno nuevo.</p>
+            <p>¿Quieres intentarlo?</p>
+          </div>
+          <div class="contenedorBotones">
+            <a href="#" class="alInicio">Volver al inicio</a>
+          </div>
         </div>
-        <p>Ahora que ya conoces tu mensaje, puedes contestarlo volviendo al inicio y cifrando uno nuevo.</p>
-        <p>¿Quieres intentarlo?</p>
-        <a href="#" class="alInicio">Volver al inicio</a>
       </div>
     </div>
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
