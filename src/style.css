@@ -20,6 +20,9 @@ body {
     background-color: #DDD;
 }
 
+.segunda, .tercera, .cuarta, .quinta{
+    display: none;
+}
 
 img {
     width: 80px;
