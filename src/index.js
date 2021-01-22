@@ -44,37 +44,6 @@ let clickeado = (e) => {
 
 document.addEventListener('click', clickeado);
 
-
-// const botonCifrar = document.getElementById('botonCifrar')
-// const muestraCifrar = () => {
-//     primera.style.display = "none";
-//     segunda.style.display = "inline";
-// }
-// botonCifrar.addEventListener('click', muestraCifrar);
-
-// const botonDescifrar = document.getElementById('botonDescifrar')
-// const muestraDescifrar = () => {
-//     primera.style.display = "none";
-//     cuarta.style.display = "inline";
-// }
-// botonDescifrar.addEventListener('click', muestraDescifrar);
-
-// const botonCifrarCifrar = document.getElementById('botonCifrar')
-// const muestradCifrar = () => {
-//     primera.style.display = "none";
-//     segunda.style.display = "inline";
-// }
-// botonCifrar.addEventListener('click', muestraCifrar);
-
-// const botonDaescifrar = document.getElementById('botonDescifrar')
-// const muestraDefscifrar = () => {
-//     primera.style.display = "none";
-//     tercera.style.display = "inline";
-// }
-// botonDescifrar.addEventListener('click', muestraDescifrar);
-
-
-
-
+// eslint-disable-next-line no-console
 console.log(cipher);
 
