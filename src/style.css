@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #777;
+    background-color: #DDD;
 }
 
 .siemprePresente{
@@ -9,15 +9,16 @@ body {
     align-items: center;
     width: 95%;
     margin: auto;
-    background-color: #DDD;
+    /* background-color: #DDD; */
     margin: 80px auto;
     padding-top: 0.1px;
+    
 }
 
 .primera, .segunda, .tercera, .cuarta, .quinta{
     width: 95%;
     margin: auto;
-    background-color: #DDD;
+    /* background-color: #DDD; */
 }
 
 .segunda, .tercera, .cuarta, .quinta{
@@ -54,7 +55,7 @@ h1 {
 
 textarea {
     width: 40%;
-    min-height: 50px;
+    min-height: 90px;
 }
 
 .botonCifrarCifrar, .botonDescifrarDescifrar, .alInicio {
@@ -68,8 +69,8 @@ textarea {
     box-sizing: border-box;
 }
 
-.alInicio{
-    width: 15%;
+.alInicio {
+    width: 150px;
 }
 
 .botonPresentacion {
@@ -95,12 +96,202 @@ textarea {
     margin: 5px;
 }
 
-
 p {
     text-align: center;
     font-size: 1em;
 }
 
+@media only screen and (max-width: 768px) {
+
+h1{
+    margin: 0 30px;
+}
 
 
+.contenedorBotones a {
+    font-size: 14px;
+}
 
+.botonPresentacion{
+    width: 105px;
+}
+
+.botonCifrarCifrar, .botonDescifrarDescifrar{
+    width: 105px;
+}
+
+textarea {
+    width: 90%;
+}
+
+.area, .contenedorBotones {
+    margin-top: 65px;
+}
+
+}
+
+@media only screen and (max-width: 535px) {
+
+h1{
+    margin: 0 20px;
+    font-size: 3.2rem;
+}
+
+img{
+    width: 55px;
+}
+
+}
+
+@media only screen and (max-width: 426px) {
+
+.siemprePresente {
+    margin: 55px auto;
+}
+
+h1{
+    margin: 0 0 0 10px;
+    font-size: 3rem;
+}
+
+img{
+    width: 60px;
+}
+
+p {
+    font-size: .9em;
+}
+
+.contenedorBotones a {
+    font-size: 14px;
+}
+
+.botonPresentacion{
+    width: 100px;
+}
+
+.botonCifrarCifrar, .botonDescifrarDescifrar{
+    width: 100px;
+}
+
+.alInicio {
+    width: 140px;
+}
+
+.area, .contenedorBotones {
+    margin-top: 45px;
+}
+
+}
+
+@media only screen and (max-width: 376px) {
+
+h1{
+    margin: 0 15px;
+    font-size: 2.5rem;
+}
+
+img{
+    width: 50px;
+}
+
+p {
+    font-size: .8em;
+}
+
+.contenedorBotones a {
+    font-size: 12px;
+}
+
+.botonPresentacion{
+    width: 82px;
+}
+
+.botonCifrarCifrar, .botonDescifrarDescifrar{
+    width: 82px;
+}
+
+.alInicio {
+    width: 120px;
+}
+
+}
+
+@media only screen and (max-width: 335px) {
+
+.siemprePresente{
+    margin: 60px auto;
+}
+
+h1{
+    margin: 0 0 0 5px;
+    font-size: 2.5rem;
+}
+
+img{
+    width: 50px;
+}
+
+p {
+    font-size: .7em;
+}
+
+.contenedorBotones a {
+    font-size: 11px;
+}
+
+.botonPresentacion{
+    width: 80px;
+}
+
+.area, .contenedorBotones {
+    margin-top: 35px;
+}
+
+.botonCifrarCifrar, .botonDescifrarDescifrar{
+    width: 80px;
+}
+
+}
+
+
+@media only screen and (max-width: 300px) {
+
+.siemprePresente{
+    margin: 40px auto;
+}
+
+h1{
+    margin: 0 0 0 5px;
+    font-size: 2.0em;
+}
+
+img{
+    width: 40px;
+}
+
+p {
+    font-size: .6em;
+}
+
+.contenedorBotones a {
+    font-size: 9px;
+}
+
+.botonPresentacion{
+    width: 70px;
+}
+
+.area, .contenedorBotones {
+    margin-top: 25px;
+}
+
+.botonCifrarCifrar, .botonDescifrarDescifrar{
+    width: 70px;
+}
+
+.alInicio {
+    width: 90px;
+}
+
+}

@@ -50,7 +50,7 @@
             </div>
             <div class="desplazamiento">
               <p class="acompañaDesplazamiento">Elegí el desplazamiento</p>
-              <select class="selector">
+              <select id="selector">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -69,8 +69,8 @@
       <div class="tercera" id="tercera">
         <div class="cifrar2">
           <p>Ya lo hiciste, cifraste tu mensaje:</p>
-          <div class="contieneResultado">
-            <textarea type="text" name="yaCifrado" id="yaCifrado" cols="30" rows="10"></textarea>
+          <div class="contieneResultado contiene1">
+            <textarea type="text" name="yaCifrado" id="yaCifrado"></textarea>
           </div>
           <div class="contieneTexto">
             <p>Ahora ya puedes compartir tu mensaje, no olvides indicar el desplazamiento.</p>
@@ -93,11 +93,11 @@
               <p class="acompañaTextArea">Ingresá tu mensaje</p>
             </div>
             <div class="contiene1">
-              <textarea maxlength="200"></textarea>
+              <textarea maxlength="200" id="textoD"></textarea>
             </div>
             <div class="desplazamiento">
               <p class="acompañaDesplazamiento">Elegí el desplazamiento</p>
-              <select class="selector">
+              <select id="selectorD">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -115,12 +115,10 @@
       <!-- sección DEScifrar2, con mensaje ya DEScifrado -->
       <div class="quinta" id="quinta">
         <div class="descifrar2">
-          <div class="contieneTexto">
             <p>Ya lo hiciste, descifraste tu mensaje:</p>
-          </div>
-          <div class="contieneResultado2">
-            <p class="resultado2"></p>
-          </div>
+            <div class="contieneResultado contiene1">
+              <textarea type="text" name="aDescifrar" id="aDescifrar"></textarea>
+            </div>
           <div class="contieneTexto">
             <p>Ahora que ya conoces tu mensaje, puedes contestarlo volviendo al inicio y cifrando uno nuevo.</p>
             <p>¿Quieres intentarlo?</p>
