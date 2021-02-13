@@ -6,39 +6,56 @@ const tercera = document.getElementById('tercera')
 const cuarta = document.getElementById('cuarta')
 const quinta = document.getElementById('quinta')
 
-
 let clickeado = (e) => {
 
     switch (e.target.id) {
-        case "botonCifrar":
+        case "botonCifrar": {
 
             primera.style.display = "none";
             segunda.style.display = "inline";
             break;
-        case "botonCifrarCifrar":
+        }
+
+        case "botonCifrarCifrar": {
 
             segunda.style.display = "none";
             tercera.style.display = "inline";
+            let desplazamiento = document.getElementById('selector').value;
+            let texto = document.getElementById('texto').value;
+            document.getElementById('yaCifrado').value = cipher.encode(desplazamiento,texto);
             break;
+        }
 
-        case "botonDescifrar":
+        case "alInicio": {
+
+            tercera.style.display = "none";
+            primera.style.display = "inline";
+            break;
+        }
+
+        case "botonDescifrar": {
 
             primera.style.display = "none";
             cuarta.style.display = "inline";
             break;
+        }
 
-        case "botonDescifrarDescifrar":
+        case "botonDescifrarDescifrar": {
 
             cuarta.style.display = "none";
             quinta.style.display = "inline";
+            let desplazamientoD = document.getElementById('selectorD').value;
+            let textoD = document.getElementById('textoD').value;
+            document.getElementById('aDescifrar').value = cipher.decode(desplazamientoD,textoD);
             break;
+        }
 
-        case "alInicio":
+        case "alInicio2": {
 
-            tercera.style.display = "none";
             quinta.style.display = "none";
             primera.style.display = "inline";
             break;
+        }
     }
 }
 

@@ -7,9 +7,11 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
+    "parser": "babel-eslint",
     "extends": "eslint:recommended",
     "rules": {
       "no-console": "warn",
       "import/extensions": 0
     }
   }
+  

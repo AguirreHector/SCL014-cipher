@@ -1,5 +1,4 @@
-// Importamos el objeto `cipher`, que contiene los métodos `encode` y `decode`
-import cipher from '../src/cipher';
+import cipher from '../src/cipher.js';
 
 describe('cipher', () => {
 
@@ -12,11 +11,17 @@ describe('cipher', () => {
     test('should be a function', () => {
       expect(typeof cipher.encode).toBe('function');
     });
-    test('should return "HIJKLMNOPQRSTUVWXYZABCDEFG" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset 33', () => {
+    test('should return "EFGHIJKLMNOPQRSTUVWXYZ" for "ABCDEFGHIJKLMNOPQRSTUV" with offset 4', () => {
       //completa este test!
+        expect(cipher.encode("ABC", 4)).toBe("EFG");
+
+    });
+    test('should return "cdefghijklmnopqrstuvwxyz" for "abcdefghijklmnopqrstuvwx" with offset 2', () => {
+      //completa este test!
+        expect(cipher.encode("abc", 2)).toBe("cde");
+
     });
 
-    
   });
 
   describe('cipher.decode', () => {
@@ -25,8 +30,13 @@ describe('cipher', () => {
       expect(typeof cipher.decode).toBe('function');
     });
 
-    test('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
+    test('should return "ABCDEFGHIJKLMNOPQ" for "EFGHIJKLMNOPQRSTU" with offset -4', () => {
       //completa este test!
+      expect(cipher.decode("EFG", 4)).toBe("ABC");
+    });
+    test('should return "abcdefghijklmnopq" for "efghijklmnopqrstu" with offset -2', () => {
+      //completa este test!
+      expect(cipher.decode("opq", 2)).toBe("mno");
     });
 
   });
