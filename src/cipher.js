@@ -1,7 +1,7 @@
 
 const cipher = {
 
-  encode: (texto, desplazamiento) => {
+  encode: (desplazamiento, texto) => {
     const textoIngresado = texto;
     const textoCifrado = String(textoIngresado).split('').map(c=>{
     let mayus = (c === c.toUpperCase()) ? true : false;
@@ -14,16 +14,16 @@ const cipher = {
       valorEntero = 32 + (valorEntero - 126) + valorDesplazamiento - 1;
       else
       valorEntero = valorEntero + valorDesplazamiento;
-
     }
 
       let encode = String.fromCharCode(valorEntero);
       return mayus ? encode.toUpperCase() : encode;
     }).join('');
+    
     return textoCifrado;
 },
 
-  decode: (textoD, desplazamientoD) =>{
+  decode: (desplazamientoD, textoD) =>{
   const textoIngresadoDescifrar = textoD;
   const textoADescifrar = String(textoIngresadoDescifrar).split('').map(c=>{
     let mayus = (c === c.toUpperCase()) ? true : false;
