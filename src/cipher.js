@@ -5,7 +5,7 @@ const cipher = {
     const textoIngresado = texto;
     const textoCifrado = String(textoIngresado).split('').map(c=>{
     let mayus = (c === c.toUpperCase()) ? true : false;
-    let valorEntero = c.toLowerCase().charCodeAt(0);
+    let valorEntero = c.toLowerCase().charCodeAt();
 
     if(valorEntero >= 32 && valorEntero <= 126){
 
